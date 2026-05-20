@@ -1,4 +1,3 @@
-Abelino tapas · HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,7 +24,7 @@ Abelino tapas · HTML
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); }
- 
+
     /* ─── HERO ─── */
     .hero {
       background: var(--navy);
@@ -62,7 +61,7 @@ Abelino tapas · HTML
       line-height: 0;
     }
     .hero-wave svg { display: block; width: 100%; }
- 
+
     /* ─── STICKY NAV ─── */
     .nav-sticky {
       position: sticky; top: 0; z-index: 100;
@@ -86,10 +85,10 @@ Abelino tapas · HTML
     }
     .nav-btn:hover { color: rgba(255,255,255,0.9); }
     .nav-btn.active { color: var(--amber-light); border-bottom-color: var(--amber-light); }
- 
+
     /* ─── MAIN ─── */
     .main { max-width: 960px; margin: 0 auto; padding: 0 20px 120px; }
- 
+
     /* ─── SECTION ─── */
     .section { padding-top: 52px; scroll-margin-top: 50px; }
     .section-head {
@@ -102,7 +101,7 @@ Abelino tapas · HTML
       font-size: 38px; font-weight: 700; color: var(--navy); line-height: 1;
     }
     .section-note { font-size: 11px; color: var(--text-soft); font-style: italic; }
- 
+
     /* ─── MENU GRID ─── */
     .menu-grid {
       display: grid;
@@ -131,7 +130,7 @@ Abelino tapas · HTML
     .type-tinto { color: #8B1A2E; }
     .type-blanco { color: var(--sea); }
     .type-espumante { color: #7B5EA7; }
- 
+
     /* ─── ADD / QTY CONTROLS ─── */
     .add-btn {
       width: 34px; height: 34px; border-radius: 50%;
@@ -153,7 +152,7 @@ Abelino tapas · HTML
     }
     .qty-btn:hover { background: var(--amber); color: white; }
     .qty-n { font-weight: 700; font-size: 15px; color: var(--navy); min-width: 18px; text-align: center; }
- 
+
     /* ─── WINE SUB ─── */
     .wine-region-badge {
       display: inline-block;
@@ -168,7 +167,7 @@ Abelino tapas · HTML
       font-size: 21px; font-weight: 600; color: var(--navy);
       margin-bottom: 10px;
     }
- 
+
     /* ─── CART FAB ─── */
     .cart-fab {
       position: fixed; bottom: 26px; right: 22px;
@@ -190,7 +189,7 @@ Abelino tapas · HTML
       display: flex; align-items: center; justify-content: center;
     }
     .cart-fab:hover .cart-badge { background: white; color: var(--amber); }
- 
+
     /* ─── OVERLAY ─── */
     .overlay {
       position: fixed; inset: 0;
@@ -199,7 +198,7 @@ Abelino tapas · HTML
       transition: opacity 0.3s; backdrop-filter: blur(3px);
     }
     .overlay.open { opacity: 1; pointer-events: all; }
- 
+
     /* ─── CART DRAWER ─── */
     .drawer {
       position: fixed; top: 0; right: 0; bottom: 0;
@@ -211,7 +210,7 @@ Abelino tapas · HTML
       box-shadow: -8px 0 48px rgba(0,0,0,0.18);
     }
     .drawer.open { transform: translateX(0); }
- 
+
     .drawer-head {
       background: var(--navy); color: white;
       padding: 20px 22px; display: flex;
@@ -227,13 +226,13 @@ Abelino tapas · HTML
       transition: color 0.2s;
     }
     .drawer-close:hover { color: white; }
- 
+
     .drawer-body { flex: 1; overflow-y: auto; padding: 18px 22px; }
- 
+
     .empty-cart { text-align: center; padding: 64px 20px; color: var(--text-soft); }
     .empty-cart-icon { font-size: 52px; margin-bottom: 14px; }
     .empty-cart-msg { font-size: 15px; line-height: 1.5; }
- 
+
     .ci { /* cart item */
       display: flex; align-items: center; gap: 12px;
       padding: 12px 0; border-bottom: 1px solid var(--border);
@@ -251,7 +250,7 @@ Abelino tapas · HTML
     }
     .cq-btn:hover { border-color: var(--amber); color: var(--amber); }
     .cq-n { font-size: 14px; font-weight: 600; min-width: 18px; text-align: center; }
- 
+
     .notes-section { padding: 16px 0; }
     .notes-label { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-soft); margin-bottom: 8px; }
     .notes-input {
@@ -262,7 +261,7 @@ Abelino tapas · HTML
       background: var(--bg); transition: border-color 0.2s;
     }
     .notes-input:focus { outline: none; border-color: var(--amber); }
- 
+
     .drawer-foot {
       padding: 14px 22px 22px; flex-shrink: 0;
       border-top: 2px solid var(--border);
@@ -289,7 +288,7 @@ Abelino tapas · HTML
       cursor: pointer; transition: all 0.2s;
     }
     .clear-btn:hover { border-color: #EF4444; color: #EF4444; }
- 
+
     /* ─── TOAST ─── */
     .toast {
       position: fixed; bottom: 88px; left: 50%;
@@ -300,14 +299,14 @@ Abelino tapas · HTML
       pointer-events: none;
     }
     .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
- 
+
     /* ─── FOOTER ─── */
     .site-footer {
       background: var(--navy); color: rgba(255,255,255,0.5);
       text-align: center; padding: 28px 20px; font-size: 12px; letter-spacing: 0.5px;
     }
     .site-footer strong { color: var(--amber-light); }
- 
+
     /* ─── RESERVA FAB ─── */
     .reserva-fab {
       position: fixed; bottom: 84px; right: 22px;
@@ -320,7 +319,7 @@ Abelino tapas · HTML
     }
     .reserva-fab:hover { background: #2e6860; transform: translateY(-2px); box-shadow: 0 10px 32px rgba(61,122,111,0.5); }
     .reserva-fab svg { width: 16px; height: 16px; flex-shrink: 0; }
- 
+
     /* ─── HERO RESERVA BTN ─── */
     .hero-reserva-btn {
       margin-top: 24px;
@@ -333,18 +332,18 @@ Abelino tapas · HTML
     }
     .hero-reserva-btn:hover { background: var(--amber); border-color: var(--amber); transform: translateY(-1px); }
     .hero-reserva-btn svg { width: 15px; height: 15px; }
- 
+
     /* ─── RESERVA MODAL ─── */
     .reserva-overlay {
       position: fixed; inset: 0;
       background: rgba(10,20,30,0.65);
       z-index: 600; opacity: 0; pointer-events: none;
-      transition: opacity 0.3s; backdrop-filter: blur(4px);
+      transition: opacity 0.3s;
       display: flex; align-items: center; justify-content: center;
       padding: 20px;
     }
     .reserva-overlay.open { opacity: 1; pointer-events: all; }
- 
+
     .reserva-modal {
       background: var(--white); border-radius: 20px;
       width: 100%; max-width: 460px;
@@ -356,7 +355,7 @@ Abelino tapas · HTML
     .reserva-overlay.open .reserva-modal {
       transform: scale(1) translateY(0);
     }
- 
+
     .reserva-modal-head {
       background: var(--navy); color: white;
       padding: 22px 24px 20px;
@@ -374,11 +373,11 @@ Abelino tapas · HTML
       flex-shrink: 0; transition: color 0.2s;
     }
     .reserva-modal-close:hover { color: white; }
- 
+
     .reserva-modal-body { padding: 22px 24px; }
- 
+
     .reserva-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
- 
+
     .reserva-field { margin-bottom: 14px; }
     .reserva-label {
       display: block; font-size: 11px; font-weight: 600;
@@ -403,7 +402,7 @@ Abelino tapas · HTML
       padding-right: 34px; cursor: pointer;
     }
     .reserva-textarea { resize: vertical; min-height: 68px; line-height: 1.5; }
- 
+
     .reserva-modal-foot { padding: 0 24px 22px; }
     .reserva-send-btn {
       width: 100%; padding: 14px;
@@ -415,7 +414,7 @@ Abelino tapas · HTML
     }
     .reserva-send-btn:hover { background: #2e6860; transform: translateY(-1px); box-shadow: 0 6px 24px rgba(61,122,111,0.4); }
     .reserva-send-btn svg { width: 18px; height: 18px; }
- 
+
     /* ─── RESPONSIVE ─── */
     @media (max-width: 600px) {
       .menu-grid { grid-template-columns: 1fr; }
@@ -427,7 +426,7 @@ Abelino tapas · HTML
   </style>
 </head>
 <body>
- 
+
 <!-- HERO -->
 <header class="hero">
   <div class="hero-inner">
@@ -447,15 +446,15 @@ Abelino tapas · HTML
     </svg>
   </div>
 </header>
- 
+
 <!-- STICKY NAV -->
 <nav class="nav-sticky" id="nav">
   <div class="nav-inner" id="navInner"></div>
 </nav>
- 
+
 <!-- MAIN CONTENT -->
 <main class="main" id="menuMain"></main>
- 
+
 <!-- CART FAB -->
 <button class="cart-fab" id="cartFab" onclick="openCart()">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -465,10 +464,10 @@ Abelino tapas · HTML
   Mi pedido
   <span class="cart-badge" id="cartBadge">0</span>
 </button>
- 
+
 <!-- OVERLAY -->
 <div class="overlay" id="overlay" onclick="closeCart()"></div>
- 
+
 <!-- CART DRAWER -->
 <aside class="drawer" id="drawer">
   <div class="drawer-head">
@@ -487,7 +486,7 @@ Abelino tapas · HTML
     <button class="clear-btn" onclick="clearCart()">Vaciar carrito</button>
   </div>
 </aside>
- 
+
 <!-- RESERVA FAB -->
 <button class="reserva-fab" onclick="openReserva()">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -495,7 +494,7 @@ Abelino tapas · HTML
   </svg>
   Reservar Mesa
 </button>
- 
+
 <!-- RESERVA MODAL OVERLAY -->
 <div class="reserva-overlay" id="reservaOverlay" onclick="handleReservaOverlayClick(event)">
   <div class="reserva-modal" id="reservaModal">
@@ -560,15 +559,15 @@ Abelino tapas · HTML
     </div>
   </div>
 </div>
- 
+
 <!-- TOAST -->
 <div class="toast" id="toast"></div>
- 
+
 <!-- FOOTER -->
 <footer class="site-footer">
   <strong>Abelino Tapas</strong> · Playa Unión, Chubut · Reservas: 280 453-6263
 </footer>
- 
+
 <script>
 // ═══════════════════════════════════════
 // RESERVA
@@ -580,16 +579,16 @@ function openReserva() {
   document.getElementById('reservaOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
- 
+
 function closeReserva() {
   document.getElementById('reservaOverlay').classList.remove('open');
   document.body.style.overflow = '';
 }
- 
+
 function handleReservaOverlayClick(e) {
   if (e.target === document.getElementById('reservaOverlay')) closeReserva();
 }
- 
+
 function sendReservaWhatsApp() {
   const nombre   = document.getElementById('rNombre').value.trim();
   const telefono = document.getElementById('rTelefono').value.trim();
@@ -597,17 +596,17 @@ function sendReservaWhatsApp() {
   const hora     = document.getElementById('rHora').value;
   const personas = document.getElementById('rPersonas').value;
   const notas    = document.getElementById('rNotas').value.trim();
- 
+
   if (!nombre) { showToast('⚠️ Ingresá tu nombre'); return; }
   if (!fecha)  { showToast('⚠️ Seleccioná una fecha'); return; }
   if (!hora)   { showToast('⚠️ Seleccioná una hora'); return; }
   if (!personas) { showToast('⚠️ Indicá la cantidad de personas'); return; }
- 
+
   // Format date nicely
   const [y, m, d] = fecha.split('-');
   const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
   const fechaStr = `${parseInt(d)} de ${months[parseInt(m)-1]} de ${y}`;
- 
+
   let msg = `📅 *Reserva de Mesa — Abelino Tapas*\n\n`;
   msg += `👤 *Nombre:* ${nombre}\n`;
   if (telefono) msg += `📞 *Teléfono:* ${telefono}\n`;
@@ -616,12 +615,12 @@ function sendReservaWhatsApp() {
   msg += `👥 *Personas:* ${personas}\n`;
   if (notas) msg += `\n💬 *Notas:* ${notas}\n`;
   msg += `\n_Enviado desde la carta digital de Abelino Tapas_ 🌊`;
- 
+
   window.open(`https://wa.me/542804536263?text=${encodeURIComponent(msg)}`, '_blank');
   closeReserva();
   showToast('✓ Abriendo WhatsApp para confirmar reserva');
 }
- 
+
 // ═══════════════════════════════════════
 // MENU DATA
 // ═══════════════════════════════════════
@@ -768,16 +767,16 @@ const MENU = [
     ]
   }
 ];
- 
+
 // ═══════════════════════════════════════
 // CART STATE
 // ═══════════════════════════════════════
 let cart = {};
- 
+
 function cartCount() {
   return Object.values(cart).reduce((s,i) => s + i.qty, 0);
 }
- 
+
 function addItem(id, name, desc) {
   if (cart[id]) cart[id].qty++;
   else cart[id] = { name, qty:1, desc: desc||'' };
@@ -786,7 +785,7 @@ function addItem(id, name, desc) {
   renderDrawer();
   showToast('✓ ' + name);
 }
- 
+
 function removeItem(id) {
   if (!cart[id]) return;
   cart[id].qty--;
@@ -795,7 +794,7 @@ function removeItem(id) {
   updateFab();
   renderDrawer();
 }
- 
+
 function syncItemUI(id) {
   const qty = cart[id]?.qty || 0;
   const addBtn = document.querySelector(`.add-btn[data-id="${id}"]`);
@@ -810,32 +809,32 @@ function syncItemUI(id) {
     qtyCtl.style.display = 'none';
   }
 }
- 
+
 function updateFab() {
   const n = cartCount();
   const fab = document.getElementById('cartFab');
   document.getElementById('cartBadge').textContent = n;
   fab.classList.toggle('visible', n > 0);
 }
- 
+
 function openCart() {
   renderDrawer();
   document.getElementById('drawer').classList.add('open');
   document.getElementById('overlay').classList.add('open');
 }
- 
+
 function closeCart() {
   document.getElementById('drawer').classList.remove('open');
   document.getElementById('overlay').classList.remove('open');
 }
- 
+
 function renderDrawer() {
   const body = document.getElementById('drawerBody');
   const entries = Object.entries(cart);
   const count = cartCount();
   document.getElementById('cartCountLine').textContent =
     count > 0 ? `${count} producto${count !== 1 ? 's' : ''} en tu pedido` : '';
- 
+
   if (entries.length === 0) {
     body.innerHTML = `
       <div class="empty-cart">
@@ -844,7 +843,7 @@ function renderDrawer() {
       </div>`;
     return;
   }
- 
+
   let html = '';
   entries.forEach(([id, item]) => {
     const safeName = item.name.replace(/'/g, "\\'");
@@ -862,16 +861,16 @@ function renderDrawer() {
         </div>
       </div>`;
   });
- 
+
   html += `
     <div class="notes-section">
       <div class="notes-label">Notas / Aclaraciones</div>
       <textarea class="notes-input" id="cartNotes" placeholder="Ej: sin cebolla, sin gluten, preparación del pescado, salsa de la pasta, mesa afuera..."></textarea>
     </div>`;
- 
+
   body.innerHTML = html;
 }
- 
+
 function clearCart() {
   cart = {};
   document.querySelectorAll('.add-btn').forEach(b => b.style.display = 'flex');
@@ -880,11 +879,11 @@ function clearCart() {
   renderDrawer();
   showToast('🗑️ Carrito vaciado');
 }
- 
+
 function sendToWhatsApp() {
   const entries = Object.entries(cart);
   if (!entries.length) { showToast('Agregá algo al carrito primero'); return; }
- 
+
   let msg = '🦞 *Pedido — Abelino Tapas*\n\n📋 *Detalle:*\n';
   entries.forEach(([, item]) => {
     msg += `• ${item.name} ×${item.qty}\n`;
@@ -892,21 +891,21 @@ function sendToWhatsApp() {
       msg += `  _(indicar preparación/salsa al confirmar)_\n`;
     }
   });
- 
+
   const notes = document.getElementById('cartNotes')?.value?.trim();
   if (notes) msg += `\n💬 *Notas:* ${notes}`;
   msg += '\n\n_Enviado desde la carta digital de Abelino Tapas_ 🌊';
- 
+
   window.open(`https://wa.me/542804536263?text=${encodeURIComponent(msg)}`, '_blank');
 }
- 
+
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2200);
 }
- 
+
 // ═══════════════════════════════════════
 // RENDER MENU
 // ═══════════════════════════════════════
@@ -915,7 +914,7 @@ function itemCard(item) {
   const typeClass = item.type === 'Tinto' ? 'type-tinto' : item.type === 'Blanco' ? 'type-blanco' : item.type === 'Espumante' ? 'type-espumante' : '';
   const safeName = item.name.replace(/'/g, "\\'");
   const safeDesc = desc.replace(/'/g, "\\'");
- 
+
   return `
     <div class="menu-card">
       <div class="card-info">
@@ -931,19 +930,19 @@ function itemCard(item) {
       </div>
     </div>`;
 }
- 
+
 function renderMenu() {
   // Nav
   const navInner = document.getElementById('navInner');
   navInner.innerHTML = MENU.map(s =>
     `<button class="nav-btn" data-target="${s.id}" onclick="scrollToSection('${s.id}')">${s.emoji} ${s.label}</button>`
   ).join('');
- 
+
   // Sections
   const main = document.getElementById('menuMain');
   main.innerHTML = MENU.map(section => {
     let inner = '';
- 
+
     if (section.wine) {
       inner = section.regions.map(region => `
         <div class="wine-region-badge">${region.name}</div>
@@ -956,7 +955,7 @@ function renderMenu() {
     } else {
       inner = `<div class="menu-grid">${section.items.map(itemCard).join('')}</div>`;
     }
- 
+
     return `
       <section class="section" id="${section.id}" data-id="${section.id}">
         <div class="section-head">
@@ -967,11 +966,11 @@ function renderMenu() {
       </section>`;
   }).join('');
 }
- 
+
 function scrollToSection(id) {
   document.getElementById(id)?.scrollIntoView({ behavior:'smooth', block:'start' });
 }
- 
+
 // ─── Active nav on scroll ───
 function initObserver() {
   const sections = document.querySelectorAll('.section[data-id]');
@@ -989,7 +988,7 @@ function initObserver() {
   }, { threshold: 0.15, rootMargin: '-55px 0px -45% 0px' });
   sections.forEach(s => obs.observe(s));
 }
- 
+
 // ─── INIT ───
 renderMenu();
 initObserver();
