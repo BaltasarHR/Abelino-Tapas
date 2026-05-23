@@ -95,8 +95,8 @@
     .cart-badge { background: var(--amber); color: white; width: 22px; height: 22px; border-radius: 50%; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
     .cart-fab:hover .cart-badge { background: white; color: var(--amber); }
 
-    /* OVERLAY */
-    .overlay { position: fixed; inset: 0; background: rgba(10,20,30,0.55); z-index: 300; opacity: 0; pointer-events: none; transition: opacity 0.3s; backdrop-filter: blur(3px); }
+    /* OVERLAY — sin backdrop-filter para evitar lag */
+    .overlay { position: fixed; inset: 0; background: rgba(10,20,30,0.55); z-index: 300; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
     .overlay.open { opacity: 1; pointer-events: all; }
 
     /* CART DRAWER */
@@ -168,7 +168,7 @@
     .reserva-send-btn:hover { background: #2e6860; transform: translateY(-1px); box-shadow: 0 6px 24px rgba(61,122,111,0.4); }
     .reserva-send-btn svg { width: 18px; height: 18px; }
 
-    /* ═══ UBICACIÓN ═══ */
+    /* UBICACIÓN */
     .ubicacion-wave-top { line-height: 0; }
     .ubicacion-wave-top svg { display: block; width: 100%; }
     .ubicacion-section { background: var(--navy); padding: 56px 20px 72px; position: relative; overflow: hidden; }
